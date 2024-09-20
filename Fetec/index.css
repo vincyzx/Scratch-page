@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Unbounded:wght@200..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+    width: .75rem;
+    background-color: rgb(233, 231, 231);
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #ff7221;
+}
+
+html, body{
+    overflow-x: hidden;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*Menu*/
+
+header{
+    position: fixed;
+    top: 0;
+
+    width: 100vw;
+    height: 10vh;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5rem;
+    
+    background-color: #ff962d;
+    color: #fff;
+    z-index: 1;
+}
+
+.logo{
+    font-family: 'unbounded';
+    cursor: pointer;
+}
+
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+
+    list-style: none;
+}
+
+.navitem{
+    font-size: 1.10rem;
+    text-align: center;
+
+    padding: 1rem;
+
+    cursor: pointer;
+    transition: .2s;
+
+    & a{
+        text-decoration: none;
+        color: inherit;
+    }
+
+    &:hover{
+        font-weight: bold;
+    }
+}
+
+
+/*sobre nós*/
+
+section{
+    width: 100%;
+    height: 65vh;
+
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 5rem 15rem;
+}
+
+.about{
+    margin-top: 3rem;
+}
+
+.landing-text{
+    width: 30vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    gap: 1rem;
+}
+
+.fetec{
+    font-size: 5rem;
+    font-family: 'unbounded';
+}
+
+.fetec-desc{
+    font-size: 1.25rem;
+}
+
+.landing-img{
+    width: 20vw;
+    border-radius: 5px;
+    margin-right: 5%;
+}
+
+/*jogos*/
+
+.games{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5rem;
+    margin-top: 90rem;
+}
+
+.card-container{
+    width: 200%;
+
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    
+}
+
+.card{
+    height: 100%;
+    width: 16%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    padding: 1rem;
+    gap: .75rem;
+
+    background-color: #fff;
+    border: 2px #ccc solid;
+    border-radius: 1.5rem;
+
+    & *{
+        text-align: center;
+    }
+}
+
+.card-img{
+    border-radius: .5rem;
+    width: 100%;
+}
+
+.card-title{
+    font-family: 'unbounded', sans-serif;
+    font-weight: 800;
+}
+
+.card-btn{
+    border: none;
+    border-radius: .5rem;
+    background-color: #ff962d;
+    color: #fff;
+
+    font-size: 1.25rem;
+    font-weight: 500;
+    font-family: 'unbounded', sans-serif;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+
+    width: 100%;
+
+    cursor: pointer;
+    transition: .2s;
+
+    &:hover{
+        background-color: #e88727;
+    }
+}
+
+.seemore{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #666;
+
+    text-decoration: none;
+    margin-bottom: 15rem;
+}
+
+/*Rodapé*/
+
+footer{
+    background-color: #ff962d;
+    height: 35vh;
+    width: 100vw;
+    margin-top: 95rem;
+}
+.textos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    width: 40vw;
+    font-size: 1.25rem;
+    color: white;
+    gap: 1rem;
+    padding: 2rem;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.site-etec{
+    transition: ease-in-out .2s;
+}
+.site-etec:hover{
+    color: #ffd0b5;
+}
+#redes{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+}
+#face{
+    font-size: 40px;
+    color: white;
+    transition: ease-in-out .2s;
+}
+#insta{
+    font-size: 40px;
+    color: white;
+    transition: ease-in-out .2s;
+}
+#face:hover{
+    transform: scale(1.1);
+    color: #ffece1;
+}
+#insta:hover{
+    transform: scale(1.1);
+    color: #ffece1;
+}
